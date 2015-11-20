@@ -27,14 +27,15 @@ public class MainActivity extends AppCompatActivity {
         articleTextView.setOnTouchListener(new OnSwipeTouchListener(thisContext) {
             @Override
             public void onSwipeLeft() {
-                if(currentPage < numPages) {
+                if (currentPage < numPages) {
                     currentPage++;
                 }
                 articleTextView.setText(article.getPage(currentPage));
             }
+
             @Override
-            public void onSwipeRight(){
-                if(currentPage > 0) {
+            public void onSwipeRight() {
+                if (currentPage > 0) {
                     currentPage--;
                 }
                 articleTextView.setText(article.getPage(currentPage));
@@ -51,13 +52,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //Read article and create an article object
-    // Article object will have multiple pages which will be set by the size of
-    // the textbox that it is in
-    // This class (MainActivity) will have currentArticle which will be the currentArticle
-    //being displayed by the text box
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -73,15 +67,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
-
-
-//    public static int getHeight(AutoResizeTextView t) {
-//        int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(screenWidth(t.getContext()), View.MeasureSpec.AT_MOST);
-//        int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
-//        t.measure(widthMeasureSpec, heightMeasureSpec);
-//        return t.getMeasuredHeight();
-    }
+}
 
 
