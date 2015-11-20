@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TextSwiperApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="article_setup">Article Loading...</string>
+</resources>
