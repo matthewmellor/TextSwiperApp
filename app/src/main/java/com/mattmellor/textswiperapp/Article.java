@@ -141,6 +141,7 @@ public class Article {
         ArrayList<String> linesOfStory = new ArrayList<>();
         //read the input from assetManager
         try {
+            int counter = 0;
             input_stream = assetManager.open(story);
             BufferedReader buffedRead = new BufferedReader(new InputStreamReader(input_stream));
             String line;

@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Create an article Object
         String articleName = "aschenputtel";
+        //Create the first page
+        //And set it as the text
+        // read the rest of the files to create the other pages
         Context thisContext = getApplicationContext();
         final AutoResizeTextView articleTextView = (AutoResizeTextView) findViewById(R.id.article_text_box);
         int numCharsPerPage = 1000;
